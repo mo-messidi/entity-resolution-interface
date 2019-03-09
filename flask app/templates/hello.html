@@ -1,0 +1,69 @@
+<title>Entity Resolution App</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+    <h2>Welcome to Entity Resolution App!</h2>
+    <form action="" method="post" role="form">
+        {{ form.csrf }}
+        <div class="form-group">
+            <label for="first_name"> First Name:</label>
+            <input type="text" class="form-control" id="first_name" name="first_name"
+                   placeholder="What's your First name?">
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" class="form-control" id="last_name" name="last_name"
+                   placeholder="What's your Last name?">
+
+            <label for="organization">Organization:</label>
+            <input type="text" class="form-control" id="organization" name="organization"
+                   placeholder="Organization of person.">
+
+            <label for="location"> Location:</label>
+            <input type="text" class="form-control" id="location" name="location"
+                   placeholder="Location of person.">
+
+            <label for="tld"> TLD:</label>
+            <input type="text" class="form-control" id="tld" name="tld"
+                   placeholder="Top Level domain ex: com, co.in, co.ru etc">
+
+            <label for="num_query"> Number of Query:</label>
+            <input type="text" class="form-control" id="num_query" name="num_query"
+                   placeholder="Maximum number of queries">
+
+            <label for="stop_query"> Stop Query:</label>
+            <input type="text" class="form-control" id="stop_query" name="stop_query"
+                   placeholder="Index of the last query you want to fetch from the generator">
+
+            <label for="pause_time"> Pause Time:</label>
+            <input type="text" class="form-control" id="pause_time" name="pause_time"
+                   placeholder="Pause time between consecutive queries, set min  = 2 to avoid IP blocking by Google">
+
+            <label for="extra_filter"> Extra filters:</label>
+            <input type="text" class="form-control" id="extra_filter" name="extra_filter"
+                   placeholder="Extra filtering">
+
+            <label for="to_file"> File Path:</label>
+            <input type="text" class="form-control" id="to_file" name="to_file"
+                   placeholder="Will write results to a txt file of given Name">
+
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+
+        {% for message in messages %}
+            {% if "Error" not in message[1]: %}
+                <div class="alert alert-info">
+                    <strong>Success! </strong> {{ message[1] }}</div>
+            {% endif %}
+
+            {% if "Error" in message[1]: %}
+                <div class="alert alert-warning">
+                    {{ message[1] }}</div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+</div>
