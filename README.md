@@ -1,11 +1,11 @@
 # Entity Resolution Web App | Flask | Python Backend
-A Web App for Entity resolution powered by google api. The App frontend takes in the Name of a Person, Organization he belongs to and his location and returns most relevant URLs for the given person, further with an option Filtering the URLs into following categories:
+A Web App for Entity resolution powered by google api. The App frontend takes in the Name of a Person, Organization he belongs to and his location and returns most relevant URLs for the given person further with an option of Filtering the URLs into following categories:
 1. Open Source
 2. Social Media
 3. Portfolio
 4. Other
 
-The URL returns are saved in a txt file at the mentioned path by the user. 
+The URL returns are saved in a txt file at the mentioned path by the user and are also printed on the console / terminal.
 
 ### Requirements ###
 The Requirements for this Web App are:
