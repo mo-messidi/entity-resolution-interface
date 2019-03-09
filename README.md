@@ -21,8 +21,8 @@ pip install -r requirements.txt
 ### Tutorial for the Flask App ###
 
 The following video explains step by step instructions to use this app :
+[![APP TUTORIAL](https://img.youtube.com/vi/BrGKgEjk4PE/0.jpg)](https://www.youtube.com/watch?v=BrGKgEjk4PE)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BrGKgEjk4PE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Tutorial for Flask App:
 
@@ -49,8 +49,8 @@ python app.py
 ### Tutorial for the Script ###
 
 The following video explains step by step instructions to use this app from the script:
+[![SCRIPT TUTORIAL](https://img.youtube.com/vi/99Rp24hxvck/0.jpg)](https://www.youtube.com/watch?v=99Rp24hxvck)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/99Rp24hxvck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Tutorial for Script:
 
