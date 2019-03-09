@@ -63,7 +63,9 @@ cd entity-resolution-interface
 ```
 
 3. Run python file google_query.py (sample command in run.txt) :
-
+```
+python google_query.py -f rajaswa -l patil -o BITS -p Goa -e True -w sample_output
+```
 
 #### Feedback ####
 
