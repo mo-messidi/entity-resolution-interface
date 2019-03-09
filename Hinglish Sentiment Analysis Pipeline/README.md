@@ -4,7 +4,7 @@ An idea proposal for a Pipeline for Sentiment Analysis on Hinglish Text
 
 ## Problem Statement and Expected Challenges ##
 * PROBLEM STATEMENT : Classifying Hinglish texts Sentimentally. Ex: positive, negative and neutral.
-* Hinglish language will not have uniformity in spellings, syntatic and semantic structures.
+* Hinglish language will not have uniformity in spellings, syntatic and semantic structures. It might contain purely english words too.
 * Can result in large vocabulary size with many tokens sharing exactly same semantic and syntatic entity. Ex: English : NOT, Hinglish Variants: Nahi, Nahii, Nai, Nhi etc
 * Cannot directly apply Frequency based approaches directly as many tokens (either words or n-grams) will share same semantic and syntatcic entity.
 * No pretrained embeddings available, cannot directly train given corpus to extract embeddings either. 
